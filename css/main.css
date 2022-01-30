@@ -1,0 +1,50 @@
+body{width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    font-family: sans-serif;
+    font-style: normal;}
+a{text-decoration: none;
+
+color:black;
+font-size: 25px;
+padding: 5px;}
+.perfil{
+    
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.principal{
+    margin:0;
+    background-position:100% ;
+    background-image: url(/img/overlay.png), url(/img/bg.jpg);
+    width:30%;
+    overflow: auto;
+    height: 100%;
+    position: fixed;
+    left:0;
+    top: 0;
+    padding: 12px;
+    text-align: center;
+    color:white ;
+}
+a[class^="icon"]{
+    font-size: 50px;
+    margin-top: 2px;
+}
+.icon-whatsapp{font-size: 20px;}
+.conteudo{
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+    float: right;
+    width: 70%;
+    padding-left:30px;
+    text-align: center;}
+h1,h2,h3,h4{
+    background-size: cover;
+    background-attachment: scroll;
+    background-image:url(/img/overlay.png);
+    color: white;
+}
