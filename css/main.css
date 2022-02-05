@@ -6,10 +6,14 @@ body{width: 100%;
     font-family: sans-serif;
     font-style: normal;}
 a{text-decoration: none;
-
 color:black;
 font-size: 25px;
 padding: 5px;}
+.click-aqui{
+    display: inline-block;
+    width:12vw ;
+    font-size:0.9em ;
+}
 .perfil{
     
     width:100px;
