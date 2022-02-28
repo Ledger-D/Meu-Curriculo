@@ -1,55 +1,120 @@
-body{width: 100%;
+  @keyframes slide{
+                0%,100%{
+                    transform: translateY(0);
+                }
+                10%{
+                    transform: translateY(-28vh);
+                }
+                20% {
+                    transform: translateY(-47vh);                    
+                }
+               30%{
+                    transform: translateY(-67vh);                    
+                }
+               40%{
+                    transform: translateY(-92vh);                    
+                 }
+               50%{
+                    transform: translateY(-110vh);                    
+                }
+               60%{
+                    transform: translateY(-138vh);                    
+                }
+                70%{
+                    transform: translateY(-159vh);                    
+                }
+                80%{
+                    transform: translateY(-179vh);                    
+                }
+                 /*90%{
+                    transform: translateY(-90vh);                    
+                }
+               100%{
+                    transform: translateY(-100vh);                    
+                } */
+
+            }
+        
+    }
+ html{
+     margin:0;
+     padding: 0;
+ }
+body{
+    font-size: 10px;
     margin: 0;
-    height: 100%;
-    background-color: #ccc;
     padding: 0;
-    font-family: sans-serif;
-    font-style: normal;}
-a{text-decoration: none;
-color:black;
-font-size: 25px;
-padding: 5px;}
-.click-aqui{
-    display: inline-block;
-    width:12vw ;
-    font-size:0.9em ;
-}
-.perfil{
-    
-    width:100px;
-    height: 100px;
-    border-radius: 50%;
-}
-.principal{
-    margin:0;
-    background-position:100% ;
-    background-image: url(../img/overlay.png), url(../img/bg.jpg);
-    width:30%;
-    overflow: auto;
-    height: 100%;
-    position: fixed;
-    left:0;
-    top: 0;
-    padding: 12px;
+    width: 412px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.main-header{
+    width: 100vw;
+   
+    background: rgba(13, 46, 235, 0.4);
+
     text-align: center;
-    color:white ;
+
 }
-a[class^="icon"]{
-    font-size: 50px;
-    margin-top: 2px;
+.main-header-nav{
+  
+    
 }
-.icon-whatsapp{font-size: 20px;}
-.conteudo{
-    box-sizing: border-box;
-    margin: 0;
-    top: 0;
-    float: right;
-    width: 70%;
-    padding-left:30px;
-    text-align: center;}
-h1,h2,h3,h4{
-    background-size: cover;
-    background-attachment: scroll;
-    background-image:url(../img/overlay.png);
+.main-header-nav ul{
+    
+    padding: 0;
+    list-style:none ;
+}
+.main-header-nav ul li a {
     color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.25em;
+    margin: 0.25em; 
+    text-decoration: none;
 }
+.main-header-nav ul li:hover{
+    
+    background-image: url(../img/overlay.png) ;
+
+}
+ .Content-principal-section{
+    box-sizing: border-box;
+    width:auto ;
+    text-align: center;
+    margin: 0em;
+   
+ }
+
+
+.prefil{
+    width:10em;
+    overflow: auto;
+    border-radius:50%;
+    margin:2% 25% ;
+}
+
+
+.Content-slide-section{
+                width: 75%;
+                height: 150px;
+                border: 10px solid white;
+                box-shadow: 0 0 10px black;
+                margin: auto;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            
+            #slide-interno{
+                will-change: transform;
+                width: auto;
+                animation: slide 15s  infinite ease-in-out;
+                margin:auto;
+            }
+            
+            #slide-interno img{ 
+                box-sizing: border-box;
+                display: block;
+                width:100%;
+                height:20em;
+                }
+
+           
