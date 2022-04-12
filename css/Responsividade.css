@@ -1,0 +1,54 @@
+@media screen and (min-width: 46.25em){
+    .main-header-nav ul {
+        display:inline-block ;
+        width: 100%;
+        height:100%;
+
+
+}
+.titulo{box-sizing: border-box;
+text-align: start;
+padding: 0%;
+margin: 0%;}
+.parallax p {
+
+   font-size: 50px;
+}
+.main-header-nav ul{box-sizing: border-box;
+text-align-last: right;
+}
+.main-header-nav ul li {display: inline;
+    padding:1em 1em;
+    transition: all 0.2s ease-in;
+    border-bottom: 0px solid teal;
+margin-right: 5px;
+}
+    
+
+
+
+
+.main-header-nav ul li:hover{
+    border-radius: 25%;
+    background: none;
+    border-bottom: 2px solid thistle;
+}
+
+.main-header-nav ul li a{
+    font-size: 20px;
+}
+.perfil{width: 15em;}
+
+
+}
+@media screen and (min-width: 62.5em){
+
+   
+    
+            
+    }
+
+
+
+        
+

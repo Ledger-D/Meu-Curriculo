@@ -1,120 +1,194 @@
-  @keyframes slide{
-                0%,100%{
-                    transform: translateY(0);
-                }
-                10%{
-                    transform: translateY(-28vh);
-                }
-                20% {
-                    transform: translateY(-47vh);                    
-                }
-               30%{
-                    transform: translateY(-67vh);                    
-                }
-               40%{
-                    transform: translateY(-92vh);                    
-                 }
-               50%{
-                    transform: translateY(-110vh);                    
-                }
-               60%{
-                    transform: translateY(-138vh);                    
-                }
-                70%{
-                    transform: translateY(-159vh);                    
-                }
-                80%{
-                    transform: translateY(-179vh);                    
-                }
-                 /*90%{
-                    transform: translateY(-90vh);                    
-                }
-               100%{
-                    transform: translateY(-100vh);                    
-                } */
+@charset "UTF-8";
 
-            }
-        
+@keyframes flutuando {
+    0% {
+        transform: translateY(10px)
     }
- html{
-     margin:0;
-     padding: 0;
- }
-body{
-    font-size: 10px;
+
+    100% {
+        transform: translateY(-10px)
+    }
+
+
+}
+
+ul {
+    margin-top: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    display: inline-block;
+    text-align: center;
     margin: 0;
     padding: 0;
-   
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-.main-header{
+    font-size: 24px ;
+    font-variant:small-caps ;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    overflow-x: hidden;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oxygen", sans-serif;
+    font-size: 2em;
+}
+
+.parallax {
+    box-sizing: border-box;
+    height: 80vh;
+    background-image:
+        url(/img/Stars.png),
+        url(/img/Background\ 1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax p {
+    animation: flutuando 3s linear 1s infinite alternate;
+}
+
+.parallax p {
+    text-shadow: 2px 2px 2px teal;
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 38px;
+}
+
+.parallax_perfil {
+    box-sizing: border-box;
+    background-image: url(/img/Moon.png);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0px 10px 10px teal;
+}
+
+.main-header {
+    margin: 0;
+
     width: 100vw;
-   
-    background: rgba(13, 46, 235, 0.4);
+
+    background-color: teal;
 
     text-align: center;
 
 }
-.main-header-nav{
-  
-    
+
+.main-header-nav {
+    margin-bottom: 0;
 }
-.main-header-nav ul{
-    
+
+.main-header-nav ul {
+    margin-bottom: 0;
     padding: 0;
-    list-style:none ;
+
 }
+
+.main-header-nav ul li:hover {
+
+
+    background-image: url(../img/overlay.png);
+}
+
 .main-header-nav ul li a {
+    text-shadow: wheat 1px 0px;
+    font-size: 1.3em;
     color: white;
     display: inline-block;
     box-sizing: border-box;
     padding: 0.25em;
-    margin: 0.25em; 
+    margin: 0.25em;
     text-decoration: none;
 }
-.main-header-nav ul li:hover{
-    
-    background-image: url(../img/overlay.png) ;
 
-}
- .Content-principal-section{
+
+.Content-principal-section {
     box-sizing: border-box;
-    width:auto ;
+    width: auto;
     text-align: center;
     margin: 0em;
-   
- }
 
-
-.prefil{
-    width:10em;
-    overflow: auto;
-    border-radius:50%;
-    margin:2% 25% ;
 }
 
 
-.Content-slide-section{
-                width: 75%;
-                height: 150px;
-                border: 10px solid white;
-                box-shadow: 0 0 10px black;
-                margin: auto;
-                box-sizing: border-box;
-                overflow: hidden;
-            }
-            
-            #slide-interno{
-                will-change: transform;
-                width: auto;
-                animation: slide 15s  infinite ease-in-out;
-                margin:auto;
-            }
-            
-            #slide-interno img{ 
-                box-sizing: border-box;
-                display: block;
-                width:100%;
-                height:20em;
-                }
+.perfil {
+    width: 10em;
+    overflow: auto;
+    border-radius: 50%;
+    margin: 2% 25%;
+}
 
-           
+section {
+    box-sizing: border-box;
+background: radial-gradient( white,#ccc);
+    margin: auto;
+    margin-bottom: 2em;
+    width: 90%;
+}
+
+.skill-section-ul li {
+    display: inline-block;
+}
+
+.skill-section-ul li img {
+    width: 60px;
+    padding: 1em;
+    margin: auto;
+}
+
+
+.icon-github {
+    font-size: 44px;
+    color: rgba(13, 46, 235, 0.4);
+}
+
+.icon-linkedin {
+    font-size: 44px;
+    color: rgba(13, 46, 235, 0.4);
+}
+
+.footer {
+
+    background-image: url(/img/Stars.png),
+        url(/img/Background\ 1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 5em;
+}
