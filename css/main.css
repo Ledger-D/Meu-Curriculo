@@ -61,8 +61,8 @@ h6 {
     box-sizing: border-box;
     height: 80vh;
     background-image:
-        url(/img/Stars.png),
-        url(/img/Background\ 1.png);
+        url(../img/Stars.png),
+        url(../img/Background\ 1.png);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -88,7 +88,7 @@ h6 {
 
 .parallax_perfil {
     box-sizing: border-box;
-    background-image: url(/img/Moon.png);
+    background-image: url(../img/Moon.png);
     width: 500px;
     height: 500px;
     border-radius: 50%;
