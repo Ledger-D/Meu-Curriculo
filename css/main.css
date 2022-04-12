@@ -89,7 +89,6 @@ h6 {
 .parallax_perfil {
     box-sizing: border-box;
     background-image: url(../img/Moon.png);
-    width: 500px;
     height: 500px;
     border-radius: 50%;
     margin: auto;
@@ -185,8 +184,8 @@ background: radial-gradient( white,#ccc);
 
 .footer {
 
-    background-image: url(/img/Stars.png),
-        url(/img/Background\ 1.png);
+    background-image: url(../img/Stars.png),
+        url(../img/Background\ 1.png);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
