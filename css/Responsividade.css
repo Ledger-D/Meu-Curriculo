@@ -19,7 +19,7 @@ text-align-last: right;
 }
 .main-header-nav ul li {display: inline;
     padding:1em 1em;
-    transition: all 0.2s ease-in;
+    transition: all 0.5s ease-in;
     border-bottom: 0px solid teal;
 margin-right: 5px;
 }
@@ -29,7 +29,7 @@ margin-right: 5px;
 
 
 .main-header-nav ul li:hover{
-    border-radius: 25%;
+    border-radius: 50%;
     background: none;
     border-bottom: 2px solid thistle;
 }
@@ -39,16 +39,9 @@ margin-right: 5px;
 }
 .perfil{width: 15em;}
 
-
+.skill-section-ul li img {
+    width: 10em;
 }
-@media screen and (min-width: 62.5em){
-
-   
-    
-            
-    }
-
-
-
+}
         
 
