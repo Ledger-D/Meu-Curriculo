@@ -27,8 +27,8 @@ a {
 p {
     display: inline-block;
     text-align: center;
-    margin: 0;
-    padding:1em;
+    margin: 0.5em 0;
+    padding:0.1em;
     box-sizing:    border-box ;
     font-size: 24px ;
     font-variant:small-caps ;
@@ -43,6 +43,8 @@ scroll-behavior: smooth;
 }
 
 body {
+background: radial-gradient( white,rgba(0, 0, 0, 0.705));
+
     text-align: center;
     overflow-x: hidden;
     letter-spacing: 1.5px;
@@ -168,7 +170,6 @@ section {
 background: radial-gradient( white,rgba(0, 0, 0, 0.705));
     margin-left: 0;
     margin-right: 0;
-    margin-top:1px ;
     padding-top: 15em;
     min-width: 100vw;
     min-height: 100vh;
@@ -200,7 +201,11 @@ background: radial-gradient( white,rgba(0, 0, 0, 0.705));
 }
 
 .footer {
-
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: block;
+    color:white;
     background-image: url(../img/Stars.png),
         url(../img/Background\ 1.png);
     background-attachment: fixed;
@@ -208,3 +213,5 @@ background: radial-gradient( white,rgba(0, 0, 0, 0.705));
     background-size: cover;
     height: 5em;
 }
+.footer p{margin:0;
+padding: 0;}

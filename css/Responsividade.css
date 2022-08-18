@@ -1,7 +1,7 @@
 @media screen and (min-width: 46.25em){
     .main-header-nav ul {
         display:inline-block ;
-        width: 100%;
+        width: 100vw;
         height:100%;
 
 
